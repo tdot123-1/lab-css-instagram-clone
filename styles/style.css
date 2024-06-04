@@ -39,63 +39,75 @@ body, html {
 .blue-bg {
   background-color: #1c5380;
   height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.blue-bg > div {
-  width: 55%;
-  display: flex;
-  margin-right: 5vw;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.blue-bg > div > img {
-  width: 40%;
-}
-
-.home-btn {
-  width: 15%;
-  background-image: url("/images/bgtile.png");
-  background-size: contain;
-  display: flex;
-  justify-content: space-around;
-  height: 20%;
-  color: white;
-  padding: 0.5rem;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-.content {
-  background-image: url("/images/frame.png");
-  height: 30vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 44%;
-  display: flex;
-  flex-direction: column;
-  gap: 3.5vh;
   position: relative;
-  padding: 1rem 2rem;
-  z-index: 9999;
-  bottom: 5rem;
-  margin-right: 8rem;
+  z-index: -1;
 }
 
 .white-bg {
   height: 55vh;
+  position: relative;
+  z-index: -1;
+}
+
+main {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10vh;
 }
 
-.content h1 {
-  color: #06365f;
+.right-side {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-right: 0.5rem;
+}
+
+.right-header > img {
+  width: 60%;
+}
+
+.home-btn {
+  background-image: url("/images/bgtile.png");
+  background-size: contain;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 2.5rem;
+}
+
+.home-btn > img {
+  width: 22%;
+}
+
+.text {
+  background-image: url("/images/frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.text h1 {
   font-size: 2rem;
+  color: #06365f;
+  width: 60%;
 }
 
-.content > div {
-  width: 21rem;
-}
