@@ -181,4 +181,8 @@ body, html {
   .home-btn {
     width: 30%;
   }
+
+  .right-header {
+    margin-bottom: 5rem;
+  }
 }
